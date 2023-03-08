@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap");
+
+:root {
+  --primary: #362fd9;
+  --secondary: #3c84ab;
+  --third: #85cdfd;
+  --fourth: #defcf9;
+}
+
+body {
+  font-family: "Noto-Sans-JP";
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav,
+header,
+main,
+footer {
+  padding: 0% 7%;
+}
+
+nav {
+  height: 10vh;
+  padding-top: -50%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Kufam";
+  color: var(--secondary);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--secondary);
+  height: 12vh;
+}
+
+.d-block {
+  display: block;
+  border: 1px solid black;
+  margin: 16px;
+  padding: 16px;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.d-flex {
+  display: flex;
+  font-size: 5rem;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.card-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.card {
+  border-radius: 1rem;
+  height: 15rem;
+  margin: 1rem;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third);
+  border: 5px solid var(--third);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  border: 5px solid var(--fourth);
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary);
+}
+
+.nav-btn {
+  list-style: none;
+}
+
+.nav-option {
+  flex-direction: column;
+  margin: 0.625rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.btn-navbar {
+  text-decoration: none;
+  color: var(--fourth);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid var(--fourth);
+  background-color: var(--third);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-navbar:hover {
+  color: var(--third);
+  border: 2px solid var(--third);
+  background-color: var(--fourth);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-navbar:active {
+  color: var(--fourth);
+  border: 2px solid var(--fourth);
+  background-color: var(--third);
+}
+
+.grid-list-container {
+  grid-template-columns: auto;
+}
+
+header {
+  height: 80vh;
+  background-image: url("https://cnnespanol.cnn.com/wp-content/uploads/2022/12/messi-argentina-qatar-mundial-campeon-GettyImages-1450108664-e1671389219708.jpg?quality=100&strip=info");
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  background-image: url(https://www.shutterstock.com/image-vector/argentina-champion-winner-football-2022-260nw-2236178399.jpg);
+  background-size: cover;
+}
+
+.navbar-desktop {
+  flex-direction: row;
+}
+
+.navbar-mobile {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .grid-list-container {
+    grid-template-columns: auto auto;
+  }
+
+  header {
+    background-image: url("https://cnnespanol.cnn.com/wp-content/uploads/2022/12/messi-argentina-qatar-mundial-campeon-GettyImages-1450108664-e1671389219708.jpg?quality=100&strip=info");
+  }
+}
