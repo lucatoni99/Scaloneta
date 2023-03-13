@@ -9,6 +9,7 @@ body {
 h1 {
   font-size: 3rem;
 }
+
 section {
   display: grid;
   grid-template-columns: auto;
@@ -36,38 +37,31 @@ p {
 
 @media (min-width: 768px) {
   section {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
 
   p {
     font-size: 3rem;
   }
-}
-
-@media (min-width: 992px) {
-  section {
-    grid-template-columns: auto auto auto;
-  }
-
-  p {
-    font-size: 4rem;
-  }
-
-  .solo-pantallas-chicas {
-    display: none;
-  }
-
-  .solo-pantallas-grandes {
-    display: block;
+  .footer {
+    height: 35vh;
   }
 }
 
 @media (min-width: 1200px) {
   section {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
   }
 
   p {
     font-size: 5rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  .footer {
+    background-position: center bottom; /*Para que la imagen aparezca desde abajo*/
+    background-size: auto 300px; /*o las medidas que quieras darle a la imagen*/
+    background-repeat: repeat-x; /*Para que solo se repita a los lados y no hacia arriba*/
   }
 }

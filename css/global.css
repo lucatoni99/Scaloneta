@@ -8,6 +8,40 @@
 }
 
 body {
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solo-pantallas-chicas {
+  display: block;
+}
+
+.solo-pantallas-grandes {
+  display: none;
+}
+
+body {
   font-family: "Noto-Sans-JP";
   background-color: var(--primary);
   display: flex;
@@ -39,10 +73,12 @@ h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
+article {
+  background-color: var(--third);
+}
 footer {
   margin-top: auto;
-  background-color: var(--secondary);
+
   height: 12vh;
 }
 
@@ -78,31 +114,8 @@ footer {
   flex-direction: column;
 }
 
-.card-list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .d-grid {
   display: grid;
-}
-
-.card {
-  border-radius: 1rem;
-  height: 15rem;
-  margin: 1rem;
-  font-size: 2rem;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--third);
-  border: 5px solid var(--third);
-  transition: all 0.2s;
-}
-
-.card:hover {
-  border: 5px solid var(--fourth);
 }
 
 .navbar {
@@ -117,20 +130,21 @@ footer {
 
 .nav-option {
   flex-direction: column;
-  margin: 0.625rem;
+  margin: 0.1rem;
+  padding: 0rem 1rem 2rem 0rem;
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: white;
+  font-size: 3rem;
+  color: var(--fourth);
 }
 
 .btn-navbar {
   text-decoration: none;
   color: var(--fourth);
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.25rem;
-  border: 2px solid var(--fourth);
+  border: 1px solid var(--fourth);
   background-color: var(--third);
   cursor: pointer;
   transition: all 0.2s;
@@ -164,6 +178,7 @@ header {
 footer {
   background-image: url(https://www.shutterstock.com/image-vector/argentina-champion-winner-football-2022-260nw-2236178399.jpg);
   background-size: cover;
+  height: 25vh;
 }
 
 .navbar-desktop {
